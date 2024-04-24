@@ -17,6 +17,7 @@ function salvar (tarefa){
     const tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
     tarefas.push(tarefa)
     localStorage.setItem("tarefas", JSON.stringify(tarefas))
+    window.location.href = "index.html"
 }
 
 function validar(tarefa){
