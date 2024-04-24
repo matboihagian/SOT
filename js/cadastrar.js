@@ -16,6 +16,7 @@ document.querySelector("#botao-cadastrar").addEventListener("click", () => {
 
 function validar(tarefa){
     limparErros()
+
     if (tarefa.titulo.trim() == ""){
         document.querySelector("#titulo").classList.add("is-error")
         document.querySelector("#titulo-erro").innerText = "o título é obrigatório"
@@ -33,7 +34,9 @@ function validar(tarefa){
 }
 
 function limpaErros(){
-    document
+    st campos = document
     .querySelectorAll("input .is-error, textarea .is-error")
+    console.log(campos)
+    
     foreach(() => { console.log("campo com erro")})
 }
