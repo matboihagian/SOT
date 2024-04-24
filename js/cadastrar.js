@@ -16,7 +16,6 @@ document.querySelector("#botao-cadastrar").addEventListener("click", () => {
 
 function validar(tarefa){
     limparErros()
-
     if (tarefa.titulo.trim() == ""){
         document.querySelector("#titulo").classList.add("is-error")
         document.querySelector("#titulo-erro").innerText = "o título é obrigatório"
